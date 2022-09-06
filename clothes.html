@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Category - Puff-it-Up Commerce</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/puff-it-up-logo.jpg" />
+  </head>
+  <body>
+    <div class="animate__heartBeat chat fa fa-brands fa-square-whatsapp" onclick="chat()"></div>
+    <header>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa fa-home"></span>
+            <span class="nav-text">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="products.html" class="nav-link">
+            <span class="nav-icon fa-brands fa-product-hunt"></span>
+            <span class="nav-text">PRODUCTS</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="categories.html" class="nav-link">
+            <span class="nav-icon fa-solid fa-list-ul"></span>
+            <span class="nav-text">CATEGORY</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa-regular fa-address-card"></span>
+            <span class="nav-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="container">
+      <h2 class="title animate__animated animate__bounce">CLOTHES</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Leather Shirt</span>
+          <img class="shop-item-image" src="assets/images/product-5.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">115,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Hornet Top</span>
+          <img class="shop-item-image" src="assets/images/product-7.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">99,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Ruched Top</span>
+          <img class="shop-item-image" src="assets/images/product-10.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">99,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Kemeja Parasut</span>
+          <img class="shop-item-image" src="assets/images/product-1.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">115,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Basic Shirt</span>
+          <img class="shop-item-image" src="assets/images/product-12.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">110,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Tara Dress</span>
+          <img class="shop-item-image" src="assets/images/product-4.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">165,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Cotton Jumpsuit</span>
+          <img class="shop-item-image" src="assets/images/product-8.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">150,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Striped Shirt</span>
+          <img class="shop-item-image" src="assets/images/product-11.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">89,000</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">Rp. 0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+    <footer class="main-footerr">
+      <div class="containerr main-footer-container">
+        <h3>Puff-it-Up</h3>
+        <ul class="nav footer-nav">
+          <li>
+            <a href="https://shopee.co.id/puffit.up" target="_blank">
+              <i class="fa-solid fa-store"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@puffit.up" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/puffit.up/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="assets/source.js"></script>
+  </body>
+</html>

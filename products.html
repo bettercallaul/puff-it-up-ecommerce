@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Puff-it-Up</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/puff-it-up-logo.jpg" />
+  </head>
+  <body>
+    <div class="animate__heartBeat chat chat fa fa-brands fa-square-whatsapp" onclick="chat()"></div>
+   
+  
+    <header>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa fa-home"></span>
+            <span class="nav-text">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa-brands fa-product-hunt"></span>
+            <span class="nav-text">PRODUCTS</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="categories.html" class="nav-link">
+            <span class="nav-icon fa-solid fa-list-ul"></span>
+            <span class="nav-text">CATEGORIES</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa-regular fa-address-card"></span>
+            <span class="nav-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <!-- List Product -->
+      <div class="container">
+        <h2 class="title animate__animated animate__bounce">PRODUCT LIST</h2>
+        <!-- row -->
+        <div class="row">
+          <!-- column -->
+          <a>
+          <div class="col" onclick="buy('Leather Shirt', 'Rp. 115.000')">
+            <img src="assets/images/product-5.jpg" alt="" />
+            <h4>Leather Shirt</h4>
+            <p>Rp. 115.000</p>
+            </a>
+          </div>
+          <a>
+          <div class="col" onclick="buy('Hornet Top', 'Rp. 99.000')">
+            <img src="assets/images/product-7.jpg" alt="" />
+            <h4>Hornet Top</h4>
+            <p>Rp. 99.000</p>
+          </a>
+          </div>
+
+          <div class="col" onclick="buy('Ruched Top', 'Rp. 99.000')">
+            <img src="assets/images/product-10.jpg" alt="" />
+          <a>
+            <h4>Ruched Top</h4>
+            <p>Rp. 99.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Kemeja Parasut', 'Rp.115.000')">
+            <img src="assets/images/product-1.jpg" alt="" />
+            <a>
+            <h4>Kemeja Parasut</h4>
+            <p>Rp. 115.000,00</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Basic Shirt', 'Rp. 110.000')">
+            <img src="assets/images/product-12.jpg" alt="" />
+            <a>
+            <h4>Basic Shirt</h4>
+            <p>Rp. 110.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Leather Bucket Hat', 'Rp.60.000')">
+            <img src="assets/images/product-2.jpg" alt="" />
+            <a>
+            <h4>Leather Bucket Hat</h4>
+            <p>Rp. 60.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Corduroy Bucket Hat', 'Rp.45.000')">
+            <img src="assets/images/product-15.jpg" alt="" />
+            <a>
+            <h4>Corduroy Bucket Hat</h4>
+            <p>Rp. 45.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Tweed Hat', 'Rp.45.000')">
+            <img src="assets/images/product-13.jpg" alt="" />
+            <a>
+            <h4>Tweed Hat</h4>
+            <p>Rp. 45.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Leather Bucket Hat in Baby Pink', 'Rp.60.000')">
+            <img src="assets/images/product-14.jpg" alt="" />
+            <a>
+            <h4>Leather Bucket Hat in Baby Pink</h4>
+            <p>Rp. 45.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Hornet Pants', 'Rp.102.000')">
+            <img src="assets/images/product-3.jpg" alt="" />
+            <a>
+            <h4>Hornet Pants</h4>
+            <p>Rp.119.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Mermaid Skirt', 'Rp.115.000')">
+            <img src="assets/images/product-16.jpg" alt="" />
+            <a>
+            <h4>Mermaid Skirt</h4>
+            <p>Rp.115.000</p>
+          </a>
+          </div>
+
+          <div class="col" onclick="buy('Tara Dress', 'Rp.165.000')">
+            <img src="assets/images/product-4.jpg" alt="" />
+            <a>
+            <h4>Tara Dress</h4>
+            <p>Rp. 165.000</p>
+          </a>
+          </div>
+
+          <div class="col" onclick="buy('Faux Leather Pants', 'Rp. 160.000')">
+            <img src="assets/images/product-6.jpg" alt="" />
+            <a>
+            <h4>Faux Leather Pants</h4>
+            <p>Rp. 160.000</p>
+          </a>
+          </div>
+
+          <div class="col" onclick="buy('Cotton Jumpsuit', 'Rp. 150.000')">
+            <img src="assets/images/product-8.jpg" alt="" />
+            <a>
+            <h4>Cotton Jumpsuit</h4>
+            <p>Rp. 150.000</p>
+          </a>
+          </div>
+          <div class="col" onclick="buy('Denim Pants', 'Rp. 150.000')">
+            <img src="assets/images/product-9.jpg" alt="" />
+            <a>
+            <h4>Denim Pants</h4>
+            <p>Rp. 150.000</p>
+          </a>
+          </div>
+
+          <div class="col" onclick="buy('Striped Shirt', 'Rp. 89.000')">
+            <img src="assets/images/product-11.jpg" alt="" />
+            <a>
+            <h4>Striped Shirt</h4>
+            <p>Rp. 89.000</p>
+          </a>
+          </div>
+
+          <div class="col" onclick="buy('Nylon Jogger Pants', 'Rp. 115.000')">
+            <img src="assets/images/product-exclusive.png" alt="" />
+            <a>
+              <h4>Nylon Jogger Pants</h4>
+              <p>Rp. 115.000</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer class="animate__slideOutDown">
+      <p>Puff-it-Up <i class="far fa-copyright"></i> <span id="year"></span></p>
+    </footer> -->
+
+    <footer class="main-footer">
+      <div class="containerr main-footer-container">
+        <h3>Puff-it-Up</h3>
+        <ul class="nav footer-nav">
+          <li>
+            <a href="https://shopee.co.id/puffit.up" target="_blank">
+              <i class="fa-solid fa-store"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@puffit.up" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/puffit.up/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="assets/source.js"></script>
+  </body>
+</html>
