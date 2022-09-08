@@ -13,6 +13,7 @@ header {
   margin: 0 auto;
   background-color: rgb(192, 188, 182);
   border-radius: 20px;
+  position: sticky;
 }
 
 .chat {
@@ -81,6 +82,12 @@ header {
   padding: 20px;
 }
 
+.container1 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 55px;
+}
+
 .containerr {
   max-width: 900px;
   margin: 0 auto;
@@ -122,6 +129,26 @@ header {
   cursor: pointer;
 }
 
+.col-1 {
+  flex-basis: 25%;
+  padding: 30px;
+  margin: 45px;
+  min-height: 100px;
+  min-width: 100px;
+  box-shadow: 0 0 0 3px rgba(41, 10, 45, 0.685);
+  cursor: pointer;
+}
+
+.col-2 {
+  flex-basis: 35%;
+  padding: 30px;
+  margin: 55px;
+  min-height: 200px;
+  min-width: 200px;
+  box-shadow: 0 0 0 3px rgba(41, 10, 45, 0.685);
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -134,9 +161,21 @@ a {
   height: 300%;
 }
 
+.col-1 img {
+  width: 100%;
+  height: 300%;
+}
+
 .col:hover {
   transform: translateY(-10%);
   box-shadow: 0 0 0 8px rgba(192, 188, 182, 0.5);
+}
+
+.col-1:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 0 0 8px rgba(192, 188, 182, 0.5);
+  opacity: 11;
+  transition: 0.8s;
 }
 
 .main-footer {
@@ -144,11 +183,25 @@ a {
   color: white;
   padding: 0.25em 0;
 }
+
 .main-footerr {
   background-color: rgb(192, 188, 182);
   color: white;
+
   padding: 1.2em 0;
   border-radius: 40px;
+}
+
+.main-footerr1 {
+  background-color: rgb(192, 188, 182);
+  color: white;
+
+  padding: 1.2em 0;
+  border-radius: 40px;
+  width: 100%;
+  bottom: 0;
+
+  position: absolute;
 }
 
 .main-footer-container {
@@ -359,6 +412,112 @@ a {
   font-size: 1.75em;
   cursor: pointer;
 }
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  max-width: 500px;
+  line-height: 55px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact-info i {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.contact-form .text-box {
+  color: rgb(18, 17, 17);
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-form .text-box:first-child {
+  margin-right: 15px;
+}
+
+.contact-form textarea {
+  color: rgb(13, 12, 12);
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  min-width: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn {
+  float: right;
+  color: white;
+  background-color: rgb(192, 188, 182);
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+.contact-form .send-btn:hover {
+  background: rgb(142, 139, 133);
+}
+
+.alertSuccess {
+  z-index: 1;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  background: #d4edda;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3ad66e;
+  border-radius: 4px;
+}
+
+.alertError {
+  z-index: 1;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  background: red;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid orange;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 487px) {
   /* lakukan responsive code */
   header {
@@ -444,6 +603,23 @@ a {
     color: #333;
     margin-bottom: 15px;
   }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    margin: 30px 50px;
+  }
+
+  .contact-form .text-box {
+    width: 100%;
+  }
+
+  .main-footerr1 {
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 887px) {
@@ -497,5 +673,22 @@ a {
     font-size: medium;
     color: #333;
     margin-bottom: 15px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    margin: 30px 50px;
+  }
+
+  .contact-form .text-box {
+    width: 100%;
+  }
+
+  .main-footerr1 {
+    position: relative;
   }
 }

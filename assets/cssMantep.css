@@ -1,0 +1,113 @@
+.footer88 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.footer88 p {
+  color: rgb(104, 101, 101);
+  font-size: 14px;
+}
+.footer-brand {
+  margin-top: -2%;
+}
+.footer-brand h5 {
+  font-size: 2.5em;
+}
+
+.footer88 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 0;
+}
+.footer88 ul a {
+  text-decoration: none;
+  color: rgb(104, 101, 101);
+}
+.footer88 ul li {
+  color: rgb(104, 101, 101);
+  padding: 5px 0px;
+  font-size: 14px;
+}
+.footer-sosmed .sosmed-icon {
+  font-size: 24px;
+  padding: 0 5px;
+}
+
+.container88 {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.row88 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+}
+
+.col1 {
+  width: 5.3333333333%;
+  margin: 1.5%;
+}
+
+.col2 {
+  width: 13.6666666667%;
+  margin: 1.5%;
+}
+
+.col3 {
+  width: 22%;
+  margin: 1.5%;
+}
+
+.col4 {
+  width: 30.3333333333%;
+  margin: 1.5%;
+}
+
+.col5 {
+  width: 38.6666666667%;
+  margin: 1.5%;
+}
+
+.col6 {
+  width: 47%;
+  margin: 1.5%;
+}
+
+.col7 {
+  width: 55.3333333333%;
+  margin: 1.5%;
+}
+
+.col8 {
+  width: 63.6666666667%;
+  margin: 1.5%;
+}
+
+.col9 {
+  width: 72%;
+  margin: 1.5%;
+}
+
+.col10 {
+  width: 80.3333333333%;
+  margin: 1.5%;
+}
+
+.col11 {
+  width: 88.6666666667%;
+  margin: 1.5%;
+}
+
+.col12 {
+  width: 97%;
+  margin: 1.5%;
+}
+
+.spacer10 {
+  margin-top: 10px;
+}

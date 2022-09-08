@@ -139,3 +139,19 @@ function updateCartTotal() {
   total = Math.round(total * 1000);
   document.getElementsByClassName('cart-total-price')[0].innerText = 'Rp. ' + total;
 }
+
+let alertSuccess = document.getElementById('alertSuccess');
+let alertError = document.getElementById('alertError');
+let contactForm = document.getElementById('contactForm');
+
+alertSuccess.style.display = 'none';
+alertError.style.display = 'none';
+
+function terkirim() {
+  if (contactForm === '') {
+    alertSuccess.style.display = 'display';
+  } else {
+    alertError.style.display = 'display';
+  }
+  alert('mantep pack xixixi');
+}

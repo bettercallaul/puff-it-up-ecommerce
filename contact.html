@@ -11,10 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/cssMantep.css">
+    <link rel="stylesheet" href="assets/cssMantep.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Categories - Puff-it-Up Commerce</title>
+    <title>Contact - Puff-it-Up Commerce</title>
     <link rel="icon" type="image/x-icon" href="assets/images/puff-it-up-logo.jpg" />
   </head>
   <body>
@@ -34,13 +34,13 @@
           >
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="categories.html" class="nav-link">
             <span class="nav-icon fa-solid fa-list-ul"></span>
             <span class="nav-text">CATEGORIES</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="contact.html" class="nav-link">
+          <a href="#" class="nav-link">
             <span class="nav-icon fa-regular fa-address-card"></span>
             <span class="nav-text">CONTACT</span>
           </a>
@@ -48,36 +48,39 @@
       </ul>
     </header>
     <main>
-      <!-- List Product -->
-      <div class="container">
-        <h2 class="title">CATEGORIES</h2>
-        <!-- row -->
-        <div class="row animate__animated animate__slideInLeft">
-          <!-- column -->
+      <div class="container1 animate__animated animate__bounceInUp">
+        <h2 class="title">CONTACT US</h2>
+      </div>
 
-          <div class="col-1">
-            <a href="accesories.html">
-              <img src="assets/images/product-2.jpg" alt="" />
-              <h4>Accessories</h4>
-            </a>
-          </div>
-          <div class="col-1">
-            <a href="clothes.html">
-              <img src="assets/images/product-12.jpg" alt="" />
-              <h4>Clothes</h4>
-            </a>
-          </div>
+      <!-- contact section -->
+      <div class="contact-section animate__animated animate__fadeInUpBig">
+        <div class="alertSuccess" id="alertSuccess">
+          <span>Message Sent! thank you for your response!</span>
+        </div>
 
-          <div class="col-1">
-            <a href="pants.html">
-              <img src="assets/images/product-exclusive.png" alt="" />
-              <h4>Pants</h4>
-            </a>
-          </div>
+        <div class="alertError" id="alertError">
+          <span>Ups, ada yang salah pack xiixixi</span>
+        </div>
+
+        <div class="contact-info">
+          <div><i class="fas fa-map-marker-alt"></i> Adress</div>
+          <div><i class="fas fa-envelope"></i> email@email.com</div>
+          <div><i class="fas fa-phone"></i> 0000 44444 1111</div>
+          <div><i class="fas fa-clock"></i> Mon - Fri: 09:00 - 17:00</div>
+          <br />
+        </div>
+        <div class="contact-form">
+          <form class="contact" action="" method="post">
+            <input type="text" name="name" class="text-box" placeholder="Your Name" required />
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" id="contactForm"></textarea>
+            <input type="submit" name="submit" class="send-btn" value="Send" onclick="terkirim()" />
+          </form>
         </div>
       </div>
-    </main>
 
+      <!-- coloumn -->
+    </main>
     <footer class="footer88">
       <div class="container88">
         <div class="row88">
@@ -99,8 +102,8 @@
               <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="products.html">Product</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="categories.html">Category</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -119,10 +122,14 @@
             <ul>
               <a href="https://www.instagram.com/puffit.up/" target="_blank"><li class="sosmed-icon fa-brands fa-instagram"></li></a>
               <a href="https://www.tiktok.com/@puffit.up" target="_blank"><li class="sosmed-icon fa-brands fa-tiktok"></li></a>
-              <a href="https://shopee.co.id/puffit.up" target="_blank"><li class="sosmed-icon fa-solid fa-store"></li></a>             </ul>
+              <a href="https://shopee.co.id/puffit.up" target="_blank"><li class="sosmed-icon fa-solid fa-store"></li></a> 
+             
+            </ul>
           </div>
           <div class="col3">
-            <div class="footer-sosmed">           
+            <div class="footer-sosmed">
+              
+              
               <ul>
                 <span class="fa-regular fa-copyright"> 2022</span>
               </ul>
@@ -130,6 +137,7 @@
         </div>
       </div>
     </footer>
+
     <script src="assets/source.js"></script>
   </body>
 </html>
