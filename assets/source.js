@@ -53,11 +53,11 @@ function purchaseClicked() {
     let quantity = quantityElement.value;
     let button = event.target;
     let shopItem = button.parentElement.parentElement;
-    // let titleElement = shopItem.getElementsByClassName('shop-item-title')[0]; error belum caranya gimana buat penyesuaian nama barang otomatis
-    // let title = parseFloat(titleElement.innerText.replace('', ''));
+    let titleElement = shopItem.getElementsByClassName('shop-item-title')[0];
+    let title = parseInt(titleElement.innerText.replace(''));
     total = total + price * quantity;
     total = Math.round(total * 1000);
-    let pesan = `halo min, saya mau beli  barang jumlahnya ${quantity} nih ya, terus total harganya tuh segini ${total}, oke? `;
+    let pesan = `halo min, saya mau beli  barang yang namanya ${title} jumlahnya ${quantity} nih ya, terus total harganya tuh segini ${total}, oke? `;
     const whatsApp = `https://wa.me/6289650056504?text=${pesan}`;
     open(whatsApp, '_blank');
   }
@@ -138,4 +138,20 @@ function updateCartTotal() {
   }
   total = Math.round(total * 1000);
   document.getElementsByClassName('cart-total-price')[0].innerText = 'Rp. ' + total;
+}
+
+let alertSuccess = document.getElementById('alertSuccess');
+let alertError = document.getElementById('alertError');
+let contactForm = document.getElementById('contactForm');
+
+alertSuccess.style.display = 'none';
+alertError.style.display = 'none';
+
+function terkirim() {
+  if (contactForm === '') {
+    alertSuccess.style.display = 'display';
+  } else {
+    alertError.style.display = 'display';
+  }
+  alert('mantep pack xixixi');
 }
